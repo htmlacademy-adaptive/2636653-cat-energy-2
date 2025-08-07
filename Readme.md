@@ -1,6 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алена Белоглазова](https://up.htmlacademy.ru/adaptive-individual/2/user/2636653).
+
 * Наставник: [Михаил Данюшин] (https://htmlacademy.ru/profile/id225742/achievements).
 
 ---
