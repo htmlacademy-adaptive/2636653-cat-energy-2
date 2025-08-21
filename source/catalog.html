@@ -6,6 +6,9 @@
   <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon-16.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -14,7 +17,15 @@
     <div class="container">
       <nav class="navigation">
         <a class="navigation__logo-link" href="#">
-          <img class="navigation_logo-image" src="#" alt="Логотип" width="202" height="59">
+          <picture>
+            <source media="(min-width:1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-pic-desktop.svg">
+            <source media="(min-width:768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-pic-tablet.svg">
+            <img class="navigation_logo-image" src="images/logo-pic-mobile.svg" alt="Логотип" width="33" height="38">
+          </picture>
+          <picture>
+            <source media="(min-width:1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
+            <img class="navigation_logo-text" src="images/logo-text.svg" alt="Логотип" width="101" height="18">
+          </picture>
         </a>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
@@ -41,7 +52,10 @@
         <ul class="catalog__list">
 
           <li class=" catalog__item card">
-            <img class="card__image" src="#" width="68" height="86" alt="Продукт Cat Energy PRO 500 г">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/catalog-1@1x.png 1x, images/catalog-1@2x.png 2x" width="161" height="172" type="image/png">
+              <img class="card__image" src="images/catalog-1@1x.png" srcset="images/catalog-1@2x.png 2x" width="68" height="86" alt="Продукт Cat Energy PRO 500 г">
+            </picture>
             <div class="card__container">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <ul class="card__list">
@@ -63,7 +77,10 @@
           </li>
 
           <li class=" catalog__item card">
-            <img class="card__image" src="#" width="68" height="86" alt="Продукт Cat Energy PRO 1000 г">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/catalog-2@1x.png 1x, images/catalog-2@2x.png 2x" width="168" height="206" type="image/png">
+              <img class="card__image" src="images/catalog-2@1x.png" srcset="images/catalog-2@2x.png 2x" width="84" height="100" alt="Продукт Cat Energy PRO 1000 г">
+            </picture>
             <div class="card__container">
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
               <ul class="card__list">
@@ -85,7 +102,10 @@
           </li>
 
           <li class=" catalog__item card">
-            <img class="card__image" src="#" width="68" height="86" alt="Продукт Cat Energy PRO 500 г">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/catalog-3@1x.png 1x, images/catalog-3@2x.png 2x" width="161" height="172" type="image/png">
+              <img class="card__image" src="images/catalog-3@1x.png" srcset="images/catalog-3@2x.png 2x" width="68" height="86" alt="Продукт Cat Energy PRO 500 г">
+            </picture>
             <div class="card__container">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <ul class="card__list">
@@ -107,7 +127,10 @@
           </li>
 
           <li class=" catalog__item card">
-            <img class="card__image" src="#" width="68" height="86" alt="Продукт Cat Energy PRO 1000 г">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/catalog-4@1x.png 1x, images/catalog-4@2x.png 2x" width="168" height="206" type="image/png">
+              <img class="card__image" src="images/catalog-4@1x.png" srcset="images/catalog-4@2x.png 2x" width="84" height="100" alt="Продукт Cat Energy PRO 1000 г">
+            </picture>
             <div class="card__container">
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
               <ul class="card__list">
@@ -129,7 +152,10 @@
           </li>
 
           <li class=" catalog__item card">
-            <img class="card__image" src="#" width="68" height="86" alt="Продукт Cat Energy SLIM 500 г">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/catalog-5@1x.png 1x, images/catalog-5@2x.png 2x" width="161" height="172" type="image/png">
+              <img class="card__image" src="images/catalog-5@1x.png" srcset="images/catalog-5@2x.png 2x" width="68" height="86" alt="Продукт Cat Energy SLIM 500 г">
+            </picture>
             <div class="card__container">
               <h3 class="card__title">Cat Energy SLIM 500 г</h3>
               <ul class="card__list">
@@ -151,7 +177,10 @@
           </li>
 
           <li class=" catalog__item card">
-            <img class="card__image" src="#" width="68" height="86" alt="Продукт Cat Energy SLIM 1000 г">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/catalog-6@1x.png 1x, images/catalog-6@2x.png 2x" width="168" height="206" type="image/png">
+              <img class="card__image" src="images/catalog-6@1x.png" srcset="images/catalog-6@2x.png 2x" width="84" height="100" alt="Продукт Cat Energy SLIM 1000 г">
+            </picture>
             <div class="card__container">
               <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
               <ul class="card__list">
@@ -173,7 +202,10 @@
           </li>
 
           <li class=" catalog__item card">
-            <img class="card__image" src="#" width="68" height="86" alt="Продукт Cat Energy SLIM 500 г">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/catalog-7@1x.png 1x, images/catalog-7@2x.png 2x" width="161" height="172" type="image/png">
+              <img class="card__image" src="images/catalog-7@1x.png" srcset="images/catalog-7@2x.png 2x" width="68" height="86" alt="Продукт Cat Energy SLIM 500 г">
+            </picture>
             <div class="card__container">
               <h3 class="card__title">Cat Energy SLIM 500 г</h3>
               <ul class="card__list">
@@ -256,7 +288,11 @@
           <h4 class="lead__subtitle">Приглашаем к сотрудничеству дилеров!</h4>
           <p class="lead_address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           <h2 class="visually-hidden">Карта</h2>
-          <img class="map__image" src="#" width="320" height="362" alt="Карта">
+          <picture>
+            <source media="(min-width:1440px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" width="1440" height="400" type="image/png">
+            <source media="(min-width:768px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="map__image" src="images/map@1x.png" srcset="images/map@2x.png 2x" width="320" height="362" alt="Карта">
+          </picture>
         </div>
       </div>
     </section>
@@ -264,7 +300,7 @@
   <footer class="footer">
     <div class="container">
       <a class="footer__logo logo" href="#">
-        <img class="logo__image" src="#" width="202" height="59" alt="Логотип">
+        <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Логотип">
       </a>
       <ul class="footer__social-list social">
         <li class="social__item">
@@ -280,7 +316,7 @@
     </div>
     <a class="footer__copyright" href="htmlacademy.ru">
       <span class="visually-hidden">HTML Академия</span>
-      <img src="#" width="27" height="34" alt="Логотип HTML Академии">
+      <img src="images/logo-html.svg" width="27" height="34" alt="Логотип HTML Академии">
     </a>
   </footer>
 </body>
