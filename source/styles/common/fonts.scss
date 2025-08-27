@@ -1,1 +1,4 @@
 /* здесь подключите шрифты */
+
+@include font-face("Oswald", url("/source/fonts/oswald/oswaldregular.woff2") format(woff2));
+@include font-face("Lato", url("/source/fonts/lato/Lato-Regular.woff2") format(woff2));
