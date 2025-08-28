@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* GLOBAL */
+/* здесь используйте глобальные переменные */
+/* здесь подключите шрифты */
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/source/fonts/oswald/oswaldregular.woff2") format(woff2);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/source/fonts/lato/Lato-Regular.woff2") format(woff2);
+}
+
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* BLOCKS */
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.button-link {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.navigation {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.hero__slogan {
+  font-family: "Oswald", sans-serif;
+  line-height: 14px;
+}
+
+.program {
+  background-color: #f2f2f2;
+}
+/*# sourceMappingURL=styles.css.map */
