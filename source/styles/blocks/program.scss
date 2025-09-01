@@ -1,21 +1,21 @@
 .program {
-  background-color: #f2f2f2;
+  background-color: $bg-primary;
 }
 
 .program__title {
   font-family: $primary-font;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 1.5;
 }
 
 .program__description {
-  color: #444444;
+  color: $text-dark;
 }
 
 .program__link {
   font-family: $primary-font;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-decoration: none;
-  color: #000000;
+  color: $text-primary;
 }

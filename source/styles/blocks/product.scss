@@ -1,11 +1,11 @@
 .product__title {
   font-family: $primary-font;
   font-size: 16px;
-  line-height: 16px;
-  color: #222222;
+  line-height: 1;
+  color: $text-secondary;
 }
 
 .product__property {
-  line-height: 14px;
-  color: #444444;
+  line-height: 1;
+  color: $text-dark;
 }
