@@ -1,3 +1,24 @@
 .features {
-  color:$text-dark;
+  color: $text-dark;
+}
+
+.features__list {
+  list-style: none;
+}
+
+.features__item {
+  &--benefit {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+    display: block;
+  }
+
+  &::before {
+    content: "";
+    background-color: $btn-primary-color;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+
 }
