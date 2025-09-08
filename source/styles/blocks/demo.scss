@@ -1,0 +1,28 @@
+.demo {
+  position: relative;
+}
+
+.demo__slider {
+  background-color: #666666;
+  width: 4px;
+  height: 100%;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  cursor: pointer;
+}
+
+.demo__toggle {
+  mask-image: url("../../icons/stack.svg#slider");
+  mask-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  top: 50%;
+  left: -15px;
+  mask-repeat: no-repeat;
+}

@@ -1,0 +1,42 @@
+.feature {
+  list-style: none;
+
+  &::before {
+    content: "";
+    background-color: $btn-primary-color;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+  }
+
+  &--benefit {
+    &::before {
+      content: "";
+      background-image: url("../../icons/stack.svg#icon-leaf");
+    }
+  }
+
+  &--drink {
+    &::before {
+      content: "";
+      background-image: url("../../icons/stack.svg#icon-wash");
+    }
+  }
+
+  &--eat {
+    &::before {
+      content: "";
+      background-image: url("../../icons/stack.svg#icon-eat");
+    }
+  }
+
+  &--time {
+    &::before {
+      content: "";
+      background-image: url("../../icons/stack.svg#icon-time");
+    }
+  }
+}

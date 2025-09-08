@@ -43,17 +43,14 @@
     height: 10px;
     display: block;
     background-color: $text-primary;
-
-    &:hover {
-      mask-size: 32px 10px;
-    }
-
-    &:active {
-      mask-size: 32px 10px;
-      opacity: 0.8;
-    }
   }
 
+  &:hover {
+    mask-size: 32px 10px;
+  }
 
-
+  &:active {
+    mask-size: 32px 10px;
+    opacity: 30%;
+  }
 }

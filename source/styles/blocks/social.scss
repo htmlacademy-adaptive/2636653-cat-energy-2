@@ -1,0 +1,22 @@
+.social__item {
+  list-style: none;
+}
+
+.social__link {
+  mask-size: 28px 22px;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.social__link--vkontakte {
+  mask-image: url("../../icons/stack.svg#vk");
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#telegram");
+}
