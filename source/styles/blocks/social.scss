@@ -7,6 +7,18 @@
   width: 28px;
   height: 22px;
   cursor: pointer;
+  display: inline-block;
+  background-color: currentColor;
+  color: #666666;
+
+  &:hover {
+    color: $btn-primary-color;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 60%;
+  }
 }
 
 .social__link--vkontakte {

@@ -15,14 +15,30 @@
 }
 
 .demo__toggle {
-  mask-image: url("../../icons/stack.svg#slider");
-  mask-size: 40px 40px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
-  position: absolute;
   border: none;
-  cursor: pointer;
-  top: 50%;
-  left: -15px;
-  mask-repeat: no-repeat;
+  padding: 0;
+  background: none;
+  color: #666666;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $btn-primary-color;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 60%;
+  }
+}
+
+.demo__toggle-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
 }
