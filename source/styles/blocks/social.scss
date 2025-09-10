@@ -1,0 +1,34 @@
+.social__item {
+  list-style: none;
+}
+
+.social__link {
+  mask-size: 28px 22px;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: currentColor;
+  color: #666666;
+
+  &:hover {
+    color: $btn-primary-color;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 60%;
+  }
+}
+
+.social__link--vkontakte {
+  mask-image: url("../../icons/stack.svg#vk");
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#telegram");
+}
