@@ -1,0 +1,21 @@
+.program {
+  background-color: $bg-primary;
+}
+
+.program__title {
+  font-family: $primary-font;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.program__description {
+  color: $text-dark;
+}
+
+.program__link {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  color: $text-primary;
+}

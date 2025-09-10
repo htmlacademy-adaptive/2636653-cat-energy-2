@@ -1,17 +1,7 @@
+@charset "UTF-8";
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: $secondary-font;
   font-size: 14px;
-  line-height: 1.2;
-  margin: 0;
- }
-
-
-*, ::after, ::before {
+  line-height: 18px;
 }
+/*# sourceMappingURL=global.css.map */

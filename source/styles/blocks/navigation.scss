@@ -1,0 +1,10 @@
+.navigation {
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.navigation__item-link {
+  text-decoration: none;
+  color: $text-primary;
+}
