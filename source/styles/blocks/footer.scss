@@ -1,0 +1,19 @@
+.footer__copyright {
+  mask-image: url("../../icons/stack.svg#logo-html");
+  background-color: currentColor;
+  width: 27px;
+  height: 34px;
+  cursor: pointer;
+  display: inline-block;
+  color: #666666;
+
+  &:hover {
+    color: $btn-primary-color;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 60%;
+  }
+}
+
