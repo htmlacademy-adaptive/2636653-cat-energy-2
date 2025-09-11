@@ -1,0 +1,44 @@
+.demo {
+  position: relative;
+}
+
+.demo__slider {
+  background-color: #666666;
+  width: 4px;
+  height: 100%;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  cursor: pointer;
+}
+
+.demo__toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background: none;
+  color: #666666;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $btn-primary-color;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 60%;
+  }
+}
+
+.demo__toggle-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+}

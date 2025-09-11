@@ -1,0 +1,25 @@
+.navigation {
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.navigation__item-link {
+  text-decoration: none;
+  color: $text-primary;
+}
+
+.navigation__toggle {
+  background-image: url("../../icons/stack.svg#burger");
+  background-size: 24px 24px;
+  background-color: $text-light;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.navigation__toggle--close {
+  background-image: url("../../icons/stack.svg#close");
+  background-size: 18px 18px;
+}
