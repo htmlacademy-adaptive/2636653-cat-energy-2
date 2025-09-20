@@ -12,11 +12,11 @@
   color: #666666;
 
   &:hover {
-    color: $btn-primary-color;
+    color: $green;
   }
 
   &:active {
-    color: #68b738;
+    color: $green;
     opacity: 60%;
   }
 }

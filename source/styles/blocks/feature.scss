@@ -3,13 +3,14 @@
 
   &::before {
     content: "";
-    background-color: $btn-primary-color;
+    background-color: $green;
     background-position: center;
     width: 60px;
     height: 60px;
     display: block;
     background-size: 30px 32px;
     background-repeat: no-repeat;
+
   }
 
   &--benefit {
@@ -38,5 +39,36 @@
       content: "";
       background-image: url("../../icons/stack.svg#icon-time");
     }
+  }
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  display: flex;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    column-gap: 153px;
+    row-gap: 37px;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 246px;
+    height: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    gap: 79px;
+    width: auto;
   }
 }

@@ -4,6 +4,31 @@
   line-height: 1;
 }
 
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 704px;
+    margin: 0 auto;
+  }
+
+  .navigation__list {
+    width: 436px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    width: 1220px;
+  }
+}
+
 .navigation__item-link {
   text-decoration: none;
   color: $text-primary;
