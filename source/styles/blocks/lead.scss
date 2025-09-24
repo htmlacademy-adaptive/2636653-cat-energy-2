@@ -7,3 +7,21 @@
 .lead__address {
   line-height: 1;
 }
+
+.lead__wrapper {
+  display: flex;
+  padding: 26px 20px;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .lead__wrapper {
+    width: 628px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .lead__wrapper {
+    width: 568px;
+  }
+}

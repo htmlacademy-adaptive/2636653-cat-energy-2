@@ -8,3 +8,56 @@
   font-size: 16px;
   line-height: 1.2;
 }
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-products__item {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto 1fr auto;
+}
+
+.product__title {
+  grid-column: 1/-1;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products__list {
+    width: 632px;
+  }
+
+  .additional-products__item {
+    display: grid;
+    grid-template-columns: 165px 140px 140px;
+    grid-template-rows: auto auto;
+  }
+
+  .product__title {
+    grid-column: 1/2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    display: grid;
+  }
+
+  .additional-products__list {
+    width: 896px;
+  }
+
+  .additional-products__item {
+    display: flex;
+
+
+  }
+
+  .additional-products__lead {}
+
+}

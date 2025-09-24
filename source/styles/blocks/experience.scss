@@ -35,9 +35,23 @@
   .experience-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 42px;
   }
 
   .experience__item {
     width: 162px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .experience-container {
+    width: 436px;
+  }
+
+  .experience__costs {
+    display: flex;
+    column-gap: 64px;
+  }
+
 }

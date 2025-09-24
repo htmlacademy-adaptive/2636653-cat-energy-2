@@ -17,3 +17,24 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 708px;
+  }
+
+  .footer__logo {
+    grid-column: 1/1;
+  }
+
+  .footer__social-list {
+    grid-column: 2/3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1220;
+  }
+}

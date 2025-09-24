@@ -1,0 +1,41 @@
+.copyright__logo {
+  mask-image: url("../../icons/stack.svg#logo-html");
+  background-color: currentColor;
+  width: 27px;
+  height: 34px;
+  cursor: pointer;
+  display: inline-block;
+  color: #666666;
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    color: $green;
+    opacity: 60%;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.copyright__text {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #666666;
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: block;
+  }
+}
