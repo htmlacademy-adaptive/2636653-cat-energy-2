@@ -17,3 +17,41 @@
   font-size: 12px;
   line-height: 1;
 }
+
+.experience__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 32px;
+
+}
+
+.experience__item {
+  width: 124px;
+}
+
+@media (min-width: $tablet-width) {
+  .experience-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 42px;
+  }
+
+  .experience__item {
+    width: 162px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .experience-container {
+    width: 436px;
+  }
+
+  .experience__costs {
+    display: flex;
+    column-gap: 64px;
+  }
+
+}

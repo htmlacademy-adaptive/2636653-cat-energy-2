@@ -12,11 +12,11 @@
   color: #666666;
 
   &:hover {
-    color: $btn-primary-color;
+    color: $green;
   }
 
   &:active {
-    color: #68b738;
+    color: $green;
     opacity: 60%;
   }
 }
@@ -31,4 +31,12 @@
 
 .social__link--telegram {
   mask-image: url("../../icons/stack.svg#telegram");
+}
+
+.social {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 132px;
+  justify-content: space-between;
 }

@@ -8,12 +8,33 @@
   color: #666666;
 
   &:hover {
-    color: $btn-primary-color;
+    color: $green;
   }
 
   &:active {
-    color: #68b738;
+    color: $green;
     opacity: 60%;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 708px;
+  }
+
+  .footer__logo {
+    grid-column: 1/1;
+  }
+
+  .footer__social-list {
+    grid-column: 2/3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1220;
+  }
+}
