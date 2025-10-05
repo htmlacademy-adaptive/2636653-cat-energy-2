@@ -16,7 +16,8 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <nav class="navigation">
+      <nav class="navigation navigation--open navigation--nojs">
+        <div class="navigation__logo">
         <a class="navigation__logo-link" href="#">
           <picture>
             <source media="(min-width:1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-pic-desktop.svg">
@@ -28,6 +29,10 @@
             <img class="navigation_logo-text" src="images/logo-text.svg" alt="Логотип" width="101" height="18">
           </picture>
         </a>
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
             <a class="navigation__item-link" href="index.html">Главная</a>
@@ -39,9 +44,6 @@
             <a class="navigation__item-link" href="#">Подбор программы</a>
           </li>
         </ul>
-        <button class="navigation__toggle navigation__toggle--close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -185,7 +187,7 @@
         <a class="copyright__text" href="htmlacademy.ru">HTML Academy</a>
         <a class="copyright__logo" href="htmlacademy.ru">HTML Academy</a>
       </div>
-   
+
   </footer>
 </body>
 
