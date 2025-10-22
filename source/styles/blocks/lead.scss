@@ -1,11 +1,18 @@
+.lead {
+  height: 362px;
+}
+
+
 .lead__subtitle {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .lead__address {
-  line-height: 1;
+  line-height: 1.4;
+  color: $text-dark;
 }
 
 .lead__wrapper {
@@ -15,13 +22,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .lead {
+    height: 400px;
+  }
+
   .lead__wrapper {
-    width: 628px;
+    padding: 60px 70px;
+  }
+
+  .lead__address {
+    line-height: 1.5;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .lead {
+    position: relative;
+  }
+
   .lead__wrapper {
     width: 568px;
+    position: absolute;
+    background-color: $text-light;
+    top: 95px;
+    left: 110px;
+  }
+
+  .lead__subtitle {
+    font-size: 20px;
+  }
+
+  .lead__address {
+    font-size: 16px;
   }
 }

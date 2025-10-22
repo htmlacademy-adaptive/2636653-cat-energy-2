@@ -1,5 +1,6 @@
 .subscription {
   font-family: $primary-font;
+  margin-bottom: 40px;
 }
 
 .subscription__title {
@@ -8,4 +9,26 @@
 
 .subscription__subtitle {
   font-size: 16px;
+  text-align: center;
+}
+
+.subscription__form {
+  border: 1px #d9d9d9 solid;
+  margin-bottom: 16px;
+}
+
+.subscription__control {
+  width: 280px;
+  border: none;
+  padding: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-size: 20px;
+}
+
+.subscription__button {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
 }

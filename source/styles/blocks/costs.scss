@@ -1,7 +1,37 @@
+.costs {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+
 .costs__result {
   font-family: $primary-font;
   font-size: 14px;
   line-height: 1.4;
-  padding: 0;
   margin: 0;
+  text-transform: uppercase;
+  color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .costs {
+    flex-direction: column;
+  }
+
+  .costs__result {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .costs {
+    display: flex;
+    column-gap: 64px;
+  }
+}
+
+

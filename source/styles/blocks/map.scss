@@ -1,0 +1,24 @@
+.map iframe {
+  display: block;
+  border: none;
+}
+
+.map {
+  height: 524px;
+}
+
+.map--catalog {
+  background-color: $bg-primary;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 400px;
+  }
+}

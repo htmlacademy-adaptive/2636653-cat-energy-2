@@ -2,50 +2,64 @@
   font-family: $primary-font;
   font-size: 24px;
   line-height: 1;
+  margin-bottom: 49px;
+  position: relative;
+
 }
 
 .additional-products__lead {
   font-size: 16px;
   line-height: 1.2;
+  color: $text-light;
+  text-align: center;
+  padding: 187px 61px 43px 58px;
+  display: block;
+  background-color: $green;
+  height: 290px;
+  background-image: url("../../icons/icon-gift.svg");
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+
+  &::before {
+    content: "";
+    background-image: url("../../images/catalog-background@1x.jpg");
+    background-size: 280px 290px;
+  }
 }
 
 .additional-products__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
 }
 
 .additional-products__item {
-  display: grid;
-  grid-template-columns: 140px 140px;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product__title {
-  grid-column: 1/-1;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .additional-products__list {
-    width: 632px;
+    width: 708px;
   }
 
-  .additional-products__item {
-    display: grid;
-    grid-template-columns: 165px 140px 140px;
-    grid-template-rows: auto auto;
-  }
-
-  .product__title {
-    grid-column: 1/2;
+  .additional-products__title {
+    font-size: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-products {
     display: grid;
+    min-width: 1221px;
+    margin-top: 71px;
+    grid-template-columns: 896px 1fr;
   }
 
   .additional-products__list {
@@ -53,9 +67,7 @@
   }
 
   .additional-products__item {
-    display: flex;
-
-
+    
   }
 
   .additional-products__lead {}

@@ -1,8 +1,102 @@
 .hero__title {
   line-height: 1.5;
-}
+  color: $text-light;
+  padding-top: 27px;
+  }
 
 .hero__slogan {
-  font-family: $primary-font;
   line-height: 1;
+  padding-bottom: 29px;
+  text-transform: uppercase;
+}
+
+
+.hero {
+  font-family: $primary-font;
+  color: $text-light;
+  text-align: center;
+  padding-bottom: 20px;
+  background-image: url("../../images/index-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  margin-top: 66px;
+  position: relative;
+
+  &::before {
+    content: "";
+    // background: linear-gradient(to top, $text-light 178px, $green 0);
+    // background-color: $green;
+    // opacity: 80%;
+    // min-width: 320px;
+    // height: 303px;
+    // position: absolute;
+
+
+  }
+
+}
+
+
+
+
+.hero__button-link {
+  padding: 11px 64px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: $primary-font;
+}
+
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-color: $text-light;
+    text-align: left;
+    position: relative;
+    background: none;
+  }
+
+  .hero__title {
+    color: $text-primary;
+    padding-left: 120px;
+    font-size: 60px;
+  }
+
+  .hero__slogan {
+    color: $text-primary;
+    margin-left: 120px;
+    font-size: 20px;
+  }
+
+  .hero__button-link {
+    position: absolute;
+    left: 140px;
+    padding: 14px 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .hero__title {
+    padding-left: 80px;
+  }
+
+  .hero__slogan {
+    margin: 0;
+    padding-left: 80px;
+    padding-bottom: 52px;
+  }
+
+  .hero__button-link {
+    margin-left: 54px;
+  }
+
+  .hero img {
+    position: absolute;
+    top: -60px;
+    left: 35%;
+    z-index: 3;
+  }
 }
