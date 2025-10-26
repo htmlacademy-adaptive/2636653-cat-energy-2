@@ -1,6 +1,6 @@
 .footer {
   padding: 20px 40px;
-  }
+}
 
 .footer__logo {
   position: relative;
@@ -28,6 +28,7 @@
 
 .social {
   width: 280px;
+  position: relative;
 
   &::after {
     content: "";
@@ -35,6 +36,8 @@
     height: 1px;
     background-color: #d9d9d9;
     position: absolute;
+    width: 280px;
+    margin-top: 20px;
     right: -10%;
     left: -10%;
 
@@ -68,7 +71,7 @@
     display: flex;
     background-color: $bg-secondary;
     padding: 55px 30px;
-    align-items:center;
+    align-items: center;
   }
 
   .footer__logo {

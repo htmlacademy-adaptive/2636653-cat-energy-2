@@ -2,13 +2,28 @@
   .page__body--bg {
     &::before {
       content: "";
+      background-image: url("../../images/index-background-mobile@1x.png");
+      background-repeat: no-repeat;
       background-color: $green;
       position: absolute;
       height: 694px;
       width: 50%;
-      top: -55px;
+      top: 0;
       right: 0;
       z-index: 1;
+      opacity: 0.8;
+    }
+
+    // &::after {
+    //   content: "";
+    //   background-image: url("../../images/index-background-mobile@1x.png");
+    //   background-repeat: no-repeat;
+    //   height: 694px;
+    //   width: 50%;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+
     }
   }
-}
+

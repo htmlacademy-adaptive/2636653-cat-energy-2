@@ -11,7 +11,7 @@
     background-color: #d9d9d9;
     position: absolute;
     width: 280px;
-    top:-16px;
+    top: -16px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -75,6 +75,46 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    width: 895px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    display: grid;
+    grid-template-columns: 325px 325px 245px;
+    padding: 17px 0;
+
   }
+
+  .product:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .product__title {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    grid-column: 1/2;
+    align-self: center;
+  }
+
+  .product__list {
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+    display: flex;
+  }
+
+  .product__item {
+    width: 100%;
+  }
+
+  .product__property {
+    align-self: center;
+  }
+
+  .product__button {
+    grid-column: 3/4;
+    place-items: center;
+    margin: 0;
+  }
+
 }

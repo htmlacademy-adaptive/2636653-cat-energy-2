@@ -23,11 +23,13 @@
 }
 
 @media (min-width: $desktop-width) {
+
+ .catalog__list {
+  gap: 80px;
+ }
   .catalog__item {
     width: 245px;
-    column-gap: 80px;
-    row-gap: 63px;
-  }
+    }
 }
 
 
