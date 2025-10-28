@@ -1,5 +1,10 @@
 .demo {
   position: relative;
+  height: 256px;
+}
+
+.demo__image {
+  position: absolute;
 }
 
 .demo__slider {
@@ -41,4 +46,21 @@
   width: 40px;
   height: 40px;
   display: block;
+}
+
+.demo__image--before {
+  clip-path: inset(0 50% 0 0);
+}
+
+.demo__image--after {
+  clip-path: inset(0 0 0 50%);
+}
+
+
+@media (min-width: $tablet-width) {
+  .demo {
+    height: 512px;
+    background-image: linear-gradient($text-light 25%, $bg-secondary 25%);
+    
+      }
 }

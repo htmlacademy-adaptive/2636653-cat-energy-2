@@ -50,9 +50,11 @@
 
   <main class="main-container">
     <section class="hero">
-      <div class="container">
+
+        <div class="hero__wrapper ">
         <h2 class="hero__title title">Функциональное <br>питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
+     >
         <picture>
           <source media="(min-width:1440px)" srcset="images/index-can-deskop@1x.png 1x, images/index-can-deskop@2x.png 2x" width="552" height="499" type="image/png">
           <source media="(min-width:768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609" type="image/png">
@@ -60,6 +62,7 @@
         </picture>
         <a class="hero__button-link button-link" href="#">Подобрать программу</a>
       </div>
+
     </section>
 
     <section class="programs">
@@ -106,7 +109,7 @@
     </section>
 
     <section class="experience">
-      <div class="container">
+      <div class="experience__container container ">
         <div class="experience-container">
           <h2 class="experience__title title">Живой пример</h2>
           <p class="experience__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -128,14 +131,18 @@
           </div>
         </div>
         <div class="experience__demo demo">
-          <picture>
-            <source media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
-            <img class="demo__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
-          </picture>
-          <picture>
-            <source media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
-            <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
-          </picture>
+          <div class="demo__image demo__image--before">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+            </picture>
+          </div>
+          <div class="demo__image demo__image--after">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
+          </div>
           <div class="demo__slider">
             <button class="demo__toggle" type="button">
               <span class="visually-hidden">Двигать ползунок</span>
@@ -162,7 +169,7 @@
         </div>
         <h2 class="visually-hidden">Карта</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716096483!3d59.93871916905409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="100%" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 г. Санкт-Петербург"></iframe>
-          </div>
+      </div>
     </section>
   </main>
   <footer class="footer">

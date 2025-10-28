@@ -1,23 +1,11 @@
 .social {
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 20px;
   display: flex;
-  width: 132px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 20px 0;
   gap: 24px;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: #d9d9d9;
-    position: absolute;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 }
 
 .social__item {
@@ -53,4 +41,12 @@
 
 .social__link--telegram {
   mask-image: url("../../icons/stack.svg#telegram");
+}
+
+
+@media (min-width:$tablet-width) {
+  .social {
+    border: none;
+    
+  }
 }

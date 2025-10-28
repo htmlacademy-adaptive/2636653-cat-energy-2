@@ -1,29 +1,13 @@
 @media (min-width: $desktop-width) {
   .page__body--bg {
-    &::before {
-      content: "";
-      background-image: url("../../images/index-background-mobile@1x.png");
-      background-repeat: no-repeat;
-      background-color: $green;
-      position: absolute;
-      height: 694px;
-      width: 50%;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      opacity: 0.8;
-    }
+    background: url("../../images/bg-index-desktop@1x.png") no-repeat top right;
+    background-size: 720px 694px;
 
-    // &::after {
-    //   content: "";
-    //   background-image: url("../../images/index-background-mobile@1x.png");
-    //   background-repeat: no-repeat;
-    //   height: 694px;
-    //   width: 50%;
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
+    // &::before {
+    //   content:"";
+    //   background-color: $green-dark;
+    //   width: 100%;
+    // }
 
-    }
   }
-
+}

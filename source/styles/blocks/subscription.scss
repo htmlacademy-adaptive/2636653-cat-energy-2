@@ -1,6 +1,7 @@
 .subscription {
   font-family: $primary-font;
   margin-bottom: 40px;
+
 }
 
 .subscription__title {
@@ -75,6 +76,10 @@
 @media (min-width: $desktop-width) {
   .subscription__title {
     font-size: 40px;
+  }
+
+  .subscription__subtitle {
+    width: 100%;
   }
 
   .subscription__control {

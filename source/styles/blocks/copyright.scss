@@ -20,7 +20,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  width: 100%;
   }
 
 
@@ -38,8 +38,10 @@
 @media (min-width: $tablet-width) {
   .copyright {
     display: flex;
-    gap: 23px;
-    align-items: center;
+   align-items: center;
+   justify-content: end;
+   gap: 23px;
+
   }
 }
 

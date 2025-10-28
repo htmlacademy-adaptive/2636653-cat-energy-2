@@ -3,49 +3,41 @@
      line-height: 1;
      color: $text-light;
      padding-top: 27px;
-     position: relative;
-     z-index: 3;
+     margin: 0;
    }
 
    .hero__slogan {
      line-height: 1;
      padding-bottom: 29px;
      text-transform: uppercase;
-     position: relative;
-     z-index: 3;
    }
 
    .hero {
      font-family: $primary-font;
      color: $text-light;
      text-align: center;
+     height: 480px;
+     
+   }
+
+
+   .hero__wrapper {
+     background: $green-dark url("../../images/bg-index-mobile@2x.png") no-repeat center;
+     height: 302px;
+     width: 100%;
+     padding: 0;
+     margin: 0;
      padding-bottom: 20px;
-     background-image: url("../../images/index-background-mobile@1x.png");
-     background-repeat: no-repeat;
      margin-top: 66px;
-     position: relative;
-     &::before {
-       content: "";
-       background-color: $green;
-       opacity: 80%;
-       min-width: 320px;
-       height: 303px;
-       position: absolute;
-     inset: 0;
-     }
    }
 
-   .hero img {
-     position: relative;
-     z-index: 4;
-   }
- }
 
- .hero__button-link {
-   padding: 11px 64px;
-   display: inline-block;
-   text-transform: uppercase;
-   font-family: $primary-font;
+   .hero__button-link {
+     padding: 11px 64px;
+     display: inline-block;
+     text-transform: uppercase;
+     font-family: $primary-font;
+   }
  }
 
  @media (min-width: $tablet-width) {
@@ -74,12 +66,14 @@
      left: 140px;
      padding: 14px 26px;
    }
- }
+
+  }
 
  @media (min-width: $desktop-width) {
    .hero {
      position: relative;
      padding-left: 0;
+     height: 500px;
    }
 
    .hero__title {

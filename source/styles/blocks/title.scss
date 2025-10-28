@@ -4,5 +4,30 @@
   line-height: 1.1;
   color: $text-primary;
   font-weight: 400px;
+}
 
+.title--line {
+  display: block;
+  position: relative;
+  width: fit-content;
+
+  &::before {
+    content: "";
+    right: calc(100% + 40px);
+    width: 100vh;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background: $green;
+  }
+
+  &::after {
+    content: "";
+    width: 500%;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background: $green;
+    left: calc(100% + 40px);
+  }
 }
