@@ -68,7 +68,6 @@
 
   .experience-container {
     margin: 0;
-
     padding: 45px 0 0 10px;
   }
 
@@ -118,13 +117,13 @@
   .experience {
     border: none;
     margin: 0;
+    background-image: linear-gradient($text-light 28%, $bg-secondary 27%);
   }
 
   .experience__container {
     display: flex;
     gap: 80px;
     height: 512px;
-    background-image: linear-gradient($text-light 25%, $bg-secondary 25%);
   }
 
   .experience__title {

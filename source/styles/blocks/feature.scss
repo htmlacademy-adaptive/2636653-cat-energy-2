@@ -73,6 +73,7 @@
     width: 246px;
     height: 280px;
     flex-direction: column;
+    padding-top: 40px;
   }
 
   .feature {
@@ -117,8 +118,9 @@
 
 @media (min-width: $desktop-width) {
   .features__list {
-    gap: 79px;
+    gap: 0;
     width: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
-
 }

@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  }
+}
 
 
 .copyright__text {
@@ -38,10 +38,11 @@
 @media (min-width: $tablet-width) {
   .copyright {
     display: flex;
-   align-items: center;
-   justify-content: end;
-   gap: 23px;
-
+    align-items: center;
+    justify-content: end;
+    gap: 23px;
+    width: 170px;
+    text-wrap: nowrap;
   }
 }
 

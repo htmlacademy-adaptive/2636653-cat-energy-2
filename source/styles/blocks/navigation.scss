@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 100%;
     margin-top: 55px;
   }
 }
@@ -144,6 +144,7 @@
 
 .navigation__toggle {
   padding: 0;
+  padding-top: 10px;
   margin-right: 20px;
   position: absolute;
   top: 0;
@@ -171,7 +172,7 @@
 .navigation--close {
   .navigation__toggle::before {
     content: "";
-     display: block;
+    display: block;
     width: 24px;
     height: 24px;
     background-image: url("../../icons/stack.svg#burger");
@@ -183,7 +184,7 @@
 .navigation--open {
   .navigation__toggle::before {
     content: "";
-      display: block;
+    display: block;
     width: 18px;
     height: 18px;
     background-image: url("../../icons/stack.svg#close");

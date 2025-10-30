@@ -42,7 +42,6 @@
   }
 
   .footer__logo {
-    // padding-right: 110px;
     align-items: center;
   }
 
@@ -53,6 +52,13 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 66px 110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 90px;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: space-between;
   }
 }

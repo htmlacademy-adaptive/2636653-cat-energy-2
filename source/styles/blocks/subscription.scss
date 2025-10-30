@@ -6,6 +6,7 @@
 
 .subscription__title {
   font-size: 24px;
+  font-weight: 400;
 }
 
 .subscription__subtitle {
@@ -68,13 +69,9 @@
   .subscription__button {
     width: 256px;
   }
-
 }
 
-
 @media (min-width: $desktop-width) {
-
-
   .subscription__title {
     font-size: 40px;
   }
@@ -86,6 +83,4 @@
   .subscription__control {
     width: 470px;
   }
-
-
 }
