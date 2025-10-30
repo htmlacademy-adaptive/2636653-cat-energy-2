@@ -1,3 +1,18 @@
+.footer {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-bottom: 0;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+
+}
+
 .footer__copyright {
   mask-image: url("../../icons/stack.svg#logo-html");
   background-color: currentColor;
@@ -19,22 +34,31 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 708px;
+    display: flex;
+    background-color: $bg-secondary;
+    padding: 55px 30px;
+    align-items: center;
+    flex-direction: row;
   }
 
   .footer__logo {
-    grid-column: 1/1;
+    align-items: center;
   }
 
   .footer__social-list {
-    grid-column: 2/3;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
-    width: 1220;
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 90px;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: space-between;
   }
 }

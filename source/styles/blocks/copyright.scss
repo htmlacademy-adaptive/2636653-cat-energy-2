@@ -20,6 +20,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 
@@ -36,6 +37,15 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 23px;
+    width: 170px;
+    text-wrap: nowrap;
   }
+}
+
+.copyright-wrapper {
+  align-items: center;
 }

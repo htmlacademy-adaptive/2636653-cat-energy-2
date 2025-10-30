@@ -1,29 +1,81 @@
 .program {
   background-color: $bg-primary;
   list-style: none;
+  margin-bottom: 30px;
+
 
   &--slim {
     background-image: url("../../icons/stack.svg#cat-1");
     background-size: 50px 53px;
     background-repeat: no-repeat;
+    background-position: 20px 21px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 200px 211px;
+      background-position: 445px 50%;
+    }
   }
 
   &--pro {
     background-image: url("../../icons/stack.svg#cat-2");
     background-size: 67px 50px;
     background-repeat: no-repeat;
+    background-position: 13px 24px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 268px 200px;
+      background-position: 411px 50%;
+    }
+  }
+}
+
+.program__wrapper {
+  padding-left: 20px;
+  padding-bottom: 16px;
+  padding-right: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 0 52px 52px;
   }
 }
 
 .program__title {
   font-family: $primary-font;
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 1.5;
-  margin-left: 70px;
+  padding-top: 30px;
+  padding-left: 90px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 0;
+  }
 }
 
 .program__description {
   color: $text-dark;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 240px;
+    margin-top: 23px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    padding-bottom: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .program__link {
@@ -32,7 +84,11 @@
   line-height: 1;
   text-decoration: none;
   color: $text-primary;
-
+  text-transform: uppercase;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 38px;
 
   &::after {
     content: "";
@@ -45,12 +101,36 @@
     background-color: $text-primary;
   }
 
-  &:hover {
-    mask-size: 32px 10px;
+  &:active {
+    // mask-image: url("../../icons/stack.svg#arrow-long");
+    // mask-repeat: no-repeat;
+    opacity: 30%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 570px;
+  
+
+    &--slim {
+      background-size: 100px 106px;
+      background-position: 52px 41px;
+    }
+
+    &--pro {
+      background-size: 134px 100px;
+      background-position: 33px 47px;
+    }
   }
 
-  &:active {
-    mask-size: 32px 10px;
-    opacity: 30%;
+  .program__title {
+    padding: 0;
+    padding-left: 162px;
+  }
+
+  .program__description {
+    padding-top: 40px;
+    min-width: 451px;
   }
 }

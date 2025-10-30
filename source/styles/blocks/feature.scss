@@ -11,7 +11,11 @@
     background-size: 30px 32px;
     background-repeat: no-repeat;
     flex-shrink: 0;
+    align-self: center;
 
+    @media (min-width: $tablet-width) {
+      align-self: auto;
+    }
   }
 
   &--benefit {
@@ -53,6 +57,10 @@
   gap: 20px;
 }
 
+.feature__description {
+  line-height: 1.2;
+}
+
 @media (min-width: $tablet-width) {
   .features__list {
     display: flex;
@@ -64,12 +72,55 @@
   .features__item {
     width: 246px;
     height: 280px;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .feature {
+    position: relative;
+  }
+
+  .feature--benefit {
+    position: relative;
+
+    &::after {
+      @include number-item;
+      content: "1";
+    }
+  }
+
+  .feature--drink {
+    &::after {
+      @include number-item;
+      content: "2";
+    }
+  }
+
+  .feature--eat {
+    &::after {
+      @include number-item;
+      content: "3";
+    }
+  }
+
+  .feature--time {
+    &::after {
+      @include number-item;
+      content: "4";
+    }
+  }
+
+  .feature__description {
+    line-height: 1.5;
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .features__list {
-    gap: 79px;
+    gap: 0;
     width: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }

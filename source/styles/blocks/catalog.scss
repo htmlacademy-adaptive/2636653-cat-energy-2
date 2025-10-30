@@ -8,6 +8,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+  }
+
   .catalog__list {
     flex-direction: row;
     gap: 60px;
@@ -19,9 +23,21 @@
 }
 
 @media (min-width: $desktop-width) {
+
+ .catalog__list {
+  gap: 80px;
+ }
   .catalog__item {
     width: 245px;
-    column-gap: 80px;
-    row-gap: 63px;
-  }
+    }
+}
+
+
+.catalog__button {
+  grid-column: 1/-1;
+  padding: 10px;
+  width: 100%;
+  place-items: center;
+  display: grid;
+  margin-top: 21px;
 }

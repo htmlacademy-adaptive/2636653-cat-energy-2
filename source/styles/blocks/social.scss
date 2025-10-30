@@ -1,3 +1,13 @@
+.social {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 20px 0;
+  gap: 24px;
+}
+
 .social__item {
   list-style: none;
 }
@@ -33,10 +43,13 @@
   mask-image: url("../../icons/stack.svg#telegram");
 }
 
-.social {
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  width: 132px;
-  justify-content: space-between;
+
+@media (min-width:$tablet-width) {
+  .social {
+    border: none;
+    padding: 0;
+  }
 }
+
+
+

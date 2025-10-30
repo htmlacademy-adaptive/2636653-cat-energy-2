@@ -1,3 +1,16 @@
 .features {
   color: $text-dark;
 }
+
+
+@media (min-width: $tablet-width) {
+  .features__title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding-left: 0;
+  }
+}
