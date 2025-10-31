@@ -23,7 +23,6 @@
   border-radius: 3px;
 }
 
-
 .experience__list {
   padding: 0;
   padding-bottom: 20px;
@@ -51,7 +50,7 @@
   bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
-  background: #eaeaea;
+  background: $bg-secondary;
   padding: 0 10px;
 }
 
@@ -111,7 +110,6 @@
     font-size: 14px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .experience {

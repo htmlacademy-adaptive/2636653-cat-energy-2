@@ -6,7 +6,6 @@
   padding-bottom: 20px;
 }
 
-
 .costs__result {
   font-family: $primary-font;
   font-size: 14px;
@@ -26,12 +25,9 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .costs {
     display: flex;
     column-gap: 64px;
   }
 }
-
-

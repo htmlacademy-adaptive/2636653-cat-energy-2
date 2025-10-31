@@ -2,7 +2,6 @@
   position: relative;
   padding-bottom: 32px;
 
-
   &::after,
   &::before {
     content: "";
@@ -42,7 +41,6 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-
 }
 
 .product__button {
@@ -50,9 +48,7 @@
   margin-top: 21px;
   padding: 10px;
   text-align: center;
-
 }
-
 
 @media (min-width: $tablet-width) {
   .product {
@@ -80,7 +76,6 @@
     display: grid;
     grid-template-columns: 325px 325px 245px;
     padding: 17px 0;
-
   }
 
   .product:first-child {
@@ -116,5 +111,4 @@
     place-items: center;
     margin: 0;
   }
-
 }

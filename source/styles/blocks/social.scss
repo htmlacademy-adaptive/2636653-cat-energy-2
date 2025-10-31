@@ -43,13 +43,9 @@
   mask-image: url("../../icons/stack.svg#telegram");
 }
 
-
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .social {
     border: none;
     padding: 0;
   }
 }
-
-
-

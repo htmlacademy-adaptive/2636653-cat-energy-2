@@ -3,7 +3,6 @@
   list-style: none;
   margin-bottom: 30px;
 
-
   &--slim {
     background-image: url("../../icons/stack.svg#cat-1");
     background-size: 50px 53px;
@@ -102,8 +101,6 @@
   }
 
   &:active {
-    // mask-image: url("../../icons/stack.svg#arrow-long");
-    // mask-repeat: no-repeat;
     opacity: 30%;
   }
 }
@@ -111,7 +108,6 @@
 @media (min-width: $desktop-width) {
   .program {
     width: 570px;
-  
 
     &--slim {
       background-size: 100px 106px;

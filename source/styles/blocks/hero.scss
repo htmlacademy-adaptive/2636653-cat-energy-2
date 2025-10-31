@@ -20,7 +20,6 @@
 
    }
 
-
    .hero__wrapper {
      background: $green-dark url("../../images/bg-index-mobile@2x.png") no-repeat center;
      height: 302px;
@@ -30,7 +29,6 @@
      padding-bottom: 20px;
      margin-top: 66px;
    }
-
 
    .hero__button-link {
      padding: 11px 64px;
@@ -65,7 +63,6 @@
      padding: 14px 26px;
      top: 30%;
    }
-
  }
 
  @media (min-width: $desktop-width) {
@@ -82,7 +79,7 @@
    }
 
    .hero__button-link {
-   top: 50%;
+     top: 50%;
    }
 
    .hero img {
