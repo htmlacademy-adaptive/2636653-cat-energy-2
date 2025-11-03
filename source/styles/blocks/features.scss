@@ -1,10 +1,21 @@
 .features {
   color: $text-dark;
+  padding-bottom: 49px;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .features__title {
     font-size: 60px;
+  }
+
+  .features {
+    padding-bottom: 36px;
   }
 }
 

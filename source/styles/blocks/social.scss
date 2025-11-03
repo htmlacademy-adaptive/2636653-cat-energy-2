@@ -6,6 +6,7 @@
   border-bottom: 1px solid #cdcdcd;
   padding: 20px 0;
   gap: 24px;
+  margin-bottom: 0;
 }
 
 .social__item {
@@ -47,5 +48,15 @@
   .social {
     border: none;
     padding: 0;
+    margin: 0;
+    padding-left: 110px;
+    justify-content: start;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .social {
+    justify-content: start;
   }
 }

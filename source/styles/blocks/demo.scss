@@ -59,5 +59,14 @@
 @media (min-width: $tablet-width) {
   .demo {
     height: 512px;
+    margin-top: 90px;
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo {
+    margin-top: 20px;
+    padding-left: 147px;
   }
 }

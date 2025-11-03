@@ -1,16 +1,15 @@
 .footer {
-  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px;
 }
 
 .footer__logo {
-  margin-bottom: 0;
+  margin-bottom: 3px;
   width: 280px;
   display: flex;
   justify-content: center;
-
 }
 
 .footer__copyright {
@@ -43,6 +42,8 @@
 
   .footer__logo {
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .footer__social-list {
@@ -54,11 +55,11 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 66px 90px;
+    padding: 86px 110px;
   }
 
   .footer__logo {
     display: flex;
     justify-content: space-between;
-  }
+      }
 }

@@ -18,6 +18,8 @@
 @media (min-width: $tablet-width) {
   .costs {
     flex-direction: column;
+    text-align: right;
+    padding-top: 5px;
   }
 
   .costs__result {
@@ -29,5 +31,6 @@
   .costs {
     display: flex;
     column-gap: 64px;
+    flex-direction: row;
   }
 }

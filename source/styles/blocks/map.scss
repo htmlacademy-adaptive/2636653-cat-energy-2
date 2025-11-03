@@ -4,7 +4,7 @@
 }
 
 .map {
-  height: 524px;
+  height: 474px;
 }
 
 .map--catalog {
@@ -14,11 +14,14 @@
 @media (min-width: $tablet-width) {
   .map {
     height: 600px;
+    background-color: $bg-secondary;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
     height: 400px;
+    padding-top: 20px;
+    background-color: $bg-secondary;
   }
 }

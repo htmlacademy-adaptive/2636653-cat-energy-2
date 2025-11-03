@@ -1,5 +1,7 @@
 .feature {
   list-style: none;
+  padding-bottom: 20px;
+
 
   &::before {
     content: "";
@@ -15,6 +17,8 @@
 
     @media (min-width: $tablet-width) {
       align-self: auto;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -40,6 +44,8 @@
   }
 
   &--time {
+    padding: 0;
+
     &::before {
       content: "";
       background-image: url("../../icons/stack.svg#icon-time");
@@ -58,26 +64,36 @@
 }
 
 .feature__description {
-  line-height: 1.2;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .features__list {
     display: flex;
-    column-gap: 153px;
+    justify-content: space-between;
     row-gap: 37px;
     flex-wrap: wrap;
+    max-width: 633px;
   }
 
   .features__item {
-    width: 246px;
+    min-width: 246px;
     height: 280px;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .feature {
     position: relative;
+  }
+
+  .feature__description {
+    font-size: 16px;
+    padding-top: 11px;
+    max-width: 245px;
+    line-height: 1.5;
   }
 
   .feature--benefit {
@@ -109,16 +125,11 @@
       content: "4";
     }
   }
-
-  .feature__description {
-    line-height: 1.5;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .features__list {
-    gap: 0;
-    width: auto;
+    min-width: 1220px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
