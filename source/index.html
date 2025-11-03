@@ -131,22 +131,23 @@
           </div>
         </div>
         <div class="experience__demo demo">
-          <div class="demo-container">
-            <div class="demo__image demo__image--before">
-              <picture>
-                <source media="(min-width:768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
-                <source media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
-                <img src="images/cat-before-mobile@1x.png" loading="lazy" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
-              </picture>
-            </div>
-            <div class="demo__image demo__image--after">
-              <picture>
-                <source media="(min-width:768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
-                <source media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
-                <img src="images/cat-after-mobile@1x.png" loading="lazy" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
-              </picture>
-            </div>
-            <div class="demo__slider-wrapper">
+          
+          <div class="demo__image demo__image--before">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
+              <source media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img src="images/cat-before-mobile@1x.png" loading="lazy" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+            </picture>
+          </div>
+          <div class="demo__image demo__image--after">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
+              <source media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img src="images/cat-after-mobile@1x.png" loading="lazy" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
+          </div>
+          <div class="demo__slider-wrapper">
+            <div class="demo__slider">
               <button class="demo__toggle" type="button">
                 <span class="visually-hidden">Двигать ползунок</span>
                 <svg class="demo__toggle-icon" width="40" height="40" aria-hidden="true" focusable="false">
@@ -163,6 +164,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="map" data-test="contacts">
@@ -174,7 +176,7 @@
           </p>
         </div>
         <h2 class="visually-hidden">Карта</h2>
-        <div id="map" style="width:100%; height:400px;"></div>
+        <div id="map" style="width:100%; height:100%;"></div>
       </div>
     </section>
   </main>
@@ -200,7 +202,7 @@
     </div>
 
   </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=<КЛЮЧ>&lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<КЛЮЧ>&lang=ru_RU"></script>
 </body>
 
 </html>
