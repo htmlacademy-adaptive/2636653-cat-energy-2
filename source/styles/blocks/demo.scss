@@ -5,18 +5,24 @@
 
 .demo__image {
   position: absolute;
+  transform: translate(-50%, 0);
 }
 
-.demo__slider {
+.demo-container {
   background-color: #666666;
   width: 4px;
   height: 100%;
   display: block;
   border-radius: 2px;
   position: absolute;
-  left: 20px;
+  left: 50%;
   top: 0;
   cursor: pointer;
+  z-index: 2;
+}
+
+.demo__slider {
+  position: relative;
 }
 
 .demo__toggle {
@@ -31,6 +37,10 @@
   background: none;
   color: #666666;
   transition: color 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &:hover {
     color: $green;
