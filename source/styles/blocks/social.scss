@@ -49,7 +49,7 @@
     border: none;
     padding: 0;
     margin: 0;
-    padding-left: 110px;
+    padding-left: 122px;
     justify-content: start;
   }
 }
@@ -58,5 +58,6 @@
 @media (min-width: $desktop-width) {
   .social {
     justify-content: start;
+    padding-left: 107px;
   }
 }

@@ -80,9 +80,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .subscription {
+    padding-left: 0;
+    margin-bottom: 105px;
+  }
+
   .subscription__title {
     font-size: 40px;
     margin-left: 0;
+    margin-bottom: 66px;
   }
 
   .subscription__subtitle {
@@ -90,6 +96,10 @@
   }
 
   .subscription__control {
-    width: 470px;
+    width: 497px;
+  }
+
+  .subscription__form {
+    justify-content: center;
   }
 }

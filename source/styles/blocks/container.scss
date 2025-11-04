@@ -1,9 +1,10 @@
-.container {
-  width: 100%;
+ @media (max-width: 767px) {
+  .container {
+  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-}
+}}
 
 @media (min-width: $tablet-width) {
   .container {

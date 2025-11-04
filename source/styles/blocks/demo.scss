@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 52%;
+  left: 50%;
 }
 
 .demo__slider {
@@ -63,6 +63,14 @@
 
 .demo__image--before {
   clip-path: inset(0 50% 0 0);
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .demo__image--after {
@@ -79,8 +87,8 @@
   }
 
   .demo__slider-wrapper {
-    left: 45%;
-  }
+    left: 44%;
+      }
 
   .demo__image {
     min-width: 560px;
@@ -91,6 +99,7 @@
   .demo {
     margin-top: 20px;
     padding: 0;
+    margin-left: 145px;
   }
 
   .demo__slider-wrapper {

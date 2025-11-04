@@ -206,26 +206,41 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    padding-left: 24px;
+    padding-left: 21px;
   }
 
   .card__title {
+    width: 140px;
     padding: 0;
-    padding-bottom: 23.4px;
+    padding-left: 10px;
+    padding-bottom: 25px;
   }
 
   .card__property {
-   padding-left: 18px;
+    padding-left: 18px;
   }
 
   .catalog__button {
-
-            margin-top: 18px;
-            margin-left: 18px;
-            width: 169px;
+    margin-top: 18px;
+    margin-left: 18px;
+    width: 169px;
   }
 
   .catalog__list {
-   row-gap: 63px;
+    row-gap: 63px;
+  }
+
+  .card__title--different {
+    width: 134px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 26px;
+  }
+
+  .card__property--different {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 90px;
   }
 }

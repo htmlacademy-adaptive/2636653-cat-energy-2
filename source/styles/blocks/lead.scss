@@ -31,7 +31,8 @@
 
   .lead__wrapper {
     padding: 60px 70px;
-  }
+    z-index: 2;
+     }
 
   .lead__address {
     line-height: 1.25;
@@ -61,7 +62,7 @@
     width: 568px;
     position: absolute;
     background-color: $text-light;
-    top: 95px;
+    top: 75px;
     left: 110px;
     padding-left: 80px;
   }
