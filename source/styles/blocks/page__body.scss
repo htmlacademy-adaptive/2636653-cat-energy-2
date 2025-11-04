@@ -1,13 +1,15 @@
 @media (min-width: $desktop-width) {
   .page__body--bg {
-    background: url("../../images/bg-index-desktop@1x.png") no-repeat top right;
-    background-size: 720px 694px;
-
-    // &::before {
-    //   content:"";
-    //   background-color: $green-dark;
-    //   width: 100%;
-    // }
-
+    &::before {
+      content: "";
+      background-image: url("../../images/bg-index-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 50% auto;
+      position: absolute;
+      width: 100vw;
+      height: 694px;
+      top: 0;
+    }
   }
 }

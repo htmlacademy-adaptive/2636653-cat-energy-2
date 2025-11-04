@@ -1,14 +1,23 @@
 .experience {
   background-color: $bg-secondary;
+  padding-bottom: 40px;
+}
+
+.experience__demo {
+  padding: 0;
 }
 
 .experience__title {
+  margin: 0;
   padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .experience__description {
   color: $text-dark;
-  line-height: 1.2;
+  line-height: 1.3;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .experience__statistics {
@@ -18,11 +27,10 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding: 14px 10px 17px;
+  padding: 12px 10px 17px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 }
-
 
 .experience__list {
   padding: 0;
@@ -51,12 +59,12 @@
   bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
-  background: #eaeaea;
+  background: $bg-secondary;
   padding: 0 10px;
 }
 
 .experience__costs {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,15 +72,17 @@
     border-top: 1px #e6e6e6 solid;
     background-color: $text-light;
     background-image: linear-gradient($text-light 60%, $bg-secondary 25%);
+    padding-bottom: 95px;
   }
 
   .experience-container {
     margin: 0;
-    padding: 45px 0 0 10px;
+    padding-top: 40px;
   }
 
   .experience__list {
     align-items: center;
+    gap: 42px;
   }
 
   .experience__title {
@@ -95,13 +105,16 @@
   }
 
   .experience__description {
-    width: 620px;
+    min-width: 708px;
     padding-bottom: 55px;
     line-height: 1.5;
+    font-size: 16px;
   }
 
   .experience__statistics {
     font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
   }
 
   .experience__caption {
@@ -112,12 +125,13 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .experience {
     border: none;
     margin: 0;
+    height: 598px;
     background-image: linear-gradient($text-light 28%, $bg-secondary 27%);
+    padding-bottom: 60px;
   }
 
   .experience__container {
@@ -128,6 +142,7 @@
 
   .experience__title {
     position: relative;
+    padding-bottom: 142px;
 
     &::after {
       content: "";
@@ -148,5 +163,19 @@
 
   .experience__caption {
     background-color: $bg-secondary;
+  }
+
+  .experience-container {
+    width: 436px;
+    padding-top: 20px;
+  }
+
+  .experience__description {
+    min-width: 0;
+    padding-bottom: 69px;
+  }
+
+  .experience__list {
+    padding-bottom: 50px;
   }
 }

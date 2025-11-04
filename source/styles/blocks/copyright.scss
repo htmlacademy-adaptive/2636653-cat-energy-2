@@ -21,14 +21,19 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-top: 20px;
 }
 
+.copyright-wrapper {
+  min-width: 280px;
+}
 
 .copyright__text {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   color: #666666;
+  font-size: 16px;
 
   &:active {
     opacity: 60%;
@@ -43,9 +48,11 @@
     gap: 23px;
     width: 170px;
     text-wrap: nowrap;
+    margin: 0;
+    padding: 0;
   }
 }
 
-.copyright-wrapper {
-  align-items: center;
+@media (min-width: $desktop-width) {
+  
 }

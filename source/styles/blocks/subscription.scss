@@ -1,17 +1,23 @@
 .subscription {
   font-family: $primary-font;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   position: relative;
 }
 
 .subscription__title {
   font-size: 24px;
   font-weight: 400;
+  margin: 0;
+  padding-top: 37px;
+  padding-bottom: 32px;
 }
 
 .subscription__subtitle {
   font-size: 16px;
+  line-height: 1.5;
   text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .subscription__form {
@@ -22,7 +28,7 @@
   border: 1px #d9d9d9 solid;
   width: 280px;
   padding: 13px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-family: $primary-font;
   font-size: 20px;
@@ -36,33 +42,35 @@
   font-size: 20px;
 }
 
-
 @media (min-width: $tablet-width) {
   .subscription {
-    padding-left: 50px;
+    padding-left: 40px;
+    margin-bottom: 80px;
   }
 
   .subscription__title {
     font-size: 32px;
-    margin-bottom: 66px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
   }
 
   .subscription__subtitle {
     font-size: 24px;
     width: 632px;
     display: block;
-    margin: 0 auto;
-    padding-bottom: 24px;
+    margin: 0;
+    padding-bottom: 20px;
+    line-height: 1.5;
   }
 
   .subscription__form {
     display: flex;
-    justify-content: center;
+    margin: 0;
   }
 
   .subscription__control {
     width: 376px;
-    text-align: left;
     margin: 0;
   }
 
@@ -72,8 +80,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .subscription {
+    padding-left: 0;
+    margin-bottom: 105px;
+  }
+
   .subscription__title {
     font-size: 40px;
+    margin-left: 0;
+    margin-bottom: 66px;
   }
 
   .subscription__subtitle {
@@ -81,6 +96,10 @@
   }
 
   .subscription__control {
-    width: 470px;
+    width: 497px;
+  }
+
+  .subscription__form {
+    justify-content: center;
   }
 }

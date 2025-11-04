@@ -6,7 +6,6 @@
   padding-bottom: 20px;
 }
 
-
 .costs__result {
   font-family: $primary-font;
   font-size: 14px;
@@ -19,6 +18,8 @@
 @media (min-width: $tablet-width) {
   .costs {
     flex-direction: column;
+    text-align: right;
+    padding-top: 5px;
   }
 
   .costs__result {
@@ -26,12 +27,10 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .costs {
     display: flex;
     column-gap: 64px;
+    flex-direction: row;
   }
 }
-
-

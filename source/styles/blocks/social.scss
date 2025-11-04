@@ -6,6 +6,7 @@
   border-bottom: 1px solid #cdcdcd;
   padding: 20px 0;
   gap: 24px;
+  margin-bottom: 0;
 }
 
 .social__item {
@@ -43,13 +44,20 @@
   mask-image: url("../../icons/stack.svg#telegram");
 }
 
-
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .social {
     border: none;
     padding: 0;
+    margin: 0;
+    padding-left: 122px;
+    justify-content: start;
   }
 }
 
 
-
+@media (min-width: $desktop-width) {
+  .social {
+    justify-content: start;
+    padding-left: 107px;
+  }
+}

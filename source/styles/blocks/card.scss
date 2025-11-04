@@ -1,12 +1,13 @@
 .card__title {
   font-family: $primary-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.2;
   color: $text-secondary;
   text-transform: uppercase;
   grid-column: 1/1;
   margin: 0;
-  padding-bottom: 14px;
+  padding-bottom: 8px;
 }
 
 .card__property {
@@ -22,6 +23,7 @@
   padding-bottom: 25px;
   position: relative;
   padding-top: 20px;
+  height: 209px;
 
   &::after,
   &::before {
@@ -63,8 +65,8 @@
   display: grid;
   grid-template-columns: 76px 2fr;
   padding-bottom: 17px;
+  max-width: 140px;
 }
-
 
 .card__item {
   display: flex;
@@ -74,6 +76,9 @@
 .card--empty {
   position: relative;
   padding-top: 25px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 25px;
+
 
   &::after {
     content: "";
@@ -91,7 +96,6 @@
     }
   }
 
-
   &::before {
     content: " ";
     background-image: url("../../icons/plus.svg");
@@ -100,6 +104,7 @@
     margin: 0 auto;
     display: block;
     margin-bottom: 23px;
+
 
     @media (min-width: $tablet-width) {
       margin-top: 50px;
@@ -116,15 +121,19 @@
 }
 
 
+.card__property--different {
+  padding-bottom: 15px;
+}
+
+
 @media (min-width: $tablet-width) {
   .card {
     display: flex;
     flex-direction: column;
     height: 511px;
-    padding: 37px;
+    padding: 19px 37px 20px;
     background: linear-gradient(to bottom, $text-light 81px, $bg-secondary 0);
   }
-
 
   .card picture {
     width: 200px;
@@ -134,6 +143,7 @@
 
   .card__container {
     display: inline-block;
+    max-width: 250px;
   }
 
   .card__title {
@@ -141,12 +151,16 @@
     font-size: 20px;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .card__title--different {
-    margin-top: 50px;
-    margin-bottom: 23px;
+    margin-top: 37px;
+    margin-bottom: 0;
   }
+
 
   .card__property {
     font-size: 16px;
@@ -183,22 +197,50 @@
     padding: 0;
     padding-left: 37px;
     padding-right: 37px;
-
   }
-
 
   .card--empty .button--different {
     margin: 0;
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .card {
-    padding-left: 24px;
+    padding-left: 21px;
   }
 
-  // .card__container:nth-child(even) {
-  //   margin-top: -25px;
-  // }
+  .card__title {
+    width: 140px;
+    padding: 0;
+    padding-left: 10px;
+    padding-bottom: 25px;
+  }
+
+  .card__property {
+    padding-left: 18px;
+  }
+
+  .catalog__button {
+    margin-top: 18px;
+    margin-left: 18px;
+    width: 169px;
+  }
+
+  .catalog__list {
+    row-gap: 63px;
+  }
+
+  .card__title--different {
+    width: 134px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 26px;
+  }
+
+  .card__property--different {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 90px;
+  }
 }
