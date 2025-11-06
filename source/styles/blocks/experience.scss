@@ -75,11 +75,6 @@
     padding-bottom: 95px;
   }
 
-  .experience-container {
-    margin: 0;
-    padding-top: 40px;
-  }
-
   .experience__list {
     align-items: center;
     gap: 42px;
@@ -92,7 +87,7 @@
     padding-bottom: 60px;
   }
 
-  .experience-wrapper {
+  .experience__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -163,11 +158,6 @@
 
   .experience__caption {
     background-color: $bg-secondary;
-  }
-
-  .experience-container {
-    width: 436px;
-    padding-top: 20px;
   }
 
   .experience__description {

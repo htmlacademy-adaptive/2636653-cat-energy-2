@@ -6,7 +6,6 @@
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import"./blocks/page__body.scss";
 @import "./blocks/header.scss";
 @import "./blocks/container.scss";
 @import "./blocks/title.scss";
@@ -33,4 +32,6 @@
 @import "./blocks/product.scss";
 @import "./blocks/subscription.scss";
 @import "./blocks/copyright.scss";
-
+@import "./blocks/experience-container.scss";
+@import "./blocks/copyright-wrapper.scss";
+@import "./blocks/body.scss";

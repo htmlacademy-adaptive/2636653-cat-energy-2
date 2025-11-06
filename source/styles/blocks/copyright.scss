@@ -24,10 +24,6 @@
   padding-top: 20px;
 }
 
-.copyright-wrapper {
-  min-width: 280px;
-}
-
 .copyright__text {
   cursor: pointer;
   display: inline-block;
@@ -51,8 +47,4 @@
     margin: 0;
     padding: 0;
   }
-}
-
-@media (min-width: $desktop-width) {
-  
 }

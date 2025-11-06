@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
- </head>
+</head>
 
 <body class="page__body">
   <header class="header">
@@ -22,11 +22,11 @@
             <picture>
               <source media="(min-width:1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-pic-desktop.svg">
               <source media="(min-width:768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-pic-tablet.svg">
-              <img class="navigation_logo-image" src="images/logo-pic-mobile.svg" alt="Логотип" width="33" height="38">
+              <img class="navigation__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип" width="33" height="38">
             </picture>
             <picture>
               <source media="(min-width:1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
-              <img class="navigation_logo-text" src="images/logo-text.svg" alt="Логотип" width="101" height="18">
+              <img class="navigation__logo-text" src="images/logo-text.svg" alt="Логотип" width="101" height="18">
             </picture>
           </a>
           <button class="navigation__toggle" type="button">
@@ -242,7 +242,7 @@
             </div>
             <a class="catalog__button button-link" href="#">Заказать</a>
           </li>
-          <li class="catalog__item card--empty">
+          <li class="catalog__item card card--empty">
             <h3 class="card__title card__title--different">Показать еще 100500 товаров</h3>
 
             <span class="card__property card__property--different">На самом деле вкусов гораздо больше!</span>
@@ -254,7 +254,7 @@
     </section>
     <section class="additional-products" data-test="additional">
       <div class="container">
-        <h2 class="additional-products__title title--line">Дополнительные товары</h2>
+        <h2 class="additional-products__title additional-products__title--line">Дополнительные товары</h2>
         <div class="additional-products__wrapper">
           <ul class="additional-products__list">
             <li class="additional-products__item product">
@@ -310,19 +310,18 @@
 
     <section class="subscription">
       <div class="container ">
-        <h2 class="subscription__title title--line">Акции и новинки</h2>
+        <h2 class="subscription__title subscription__title--line">Акции и новинки</h2>
         <p class="subscription__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscription__form" action="#">
-          <label for="email">
-            <input class="subscription__control" id="email" name="email" placeholder="кuklachev@gmail.com">
-          </label>
+          <input class="subscription__control" id="email" name="email" placeholder="кuklachev@gmail.com">
+          <label class="visually-hidden" for="email" >Введите ваш e-mail</label>
           <button class="subscription__button button" type="button">Подписаться</button>
         </form>
       </div>
     </section>
     <section class="map">
       <div class="map__wrapper lead">
-         <div class="lead__wrapper">
+        <div class="lead__wrapper">
           <h4 class="lead__subtitle">Приглашаем <br> к сотрудничеству <br> дилеров!</h4>
           <p class="lead__address"><span>ул. Большая</span>
             <span>Конюшенная, д. 19/8</span><span>Санкт-Петербург</span>
@@ -333,29 +332,29 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-
-    <a class="footer__logo logo" href="#">
-      <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Логотип">
-    </a>
-    <ul class="footer__social-list social">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы ВКонтакте</span></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Мы в Телеграме</span></a>
-      </li>
-    </ul>
-    <div class="copyright-wrapper copyright">
-      <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  <footer class="footer" data-test="footer">
+    <div class="container footer-wrapper">
+      <a class="footer__logo logo" href="#">
+        <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Логотип">
+      </a>
+      <ul class="footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы ВКонтакте</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Мы в Телеграме</span></a>
+        </li>
+      </ul>
+      <div class="copyright-wrapper copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
-
   </footer>
-   <script src="https://api-maps.yandex.ru/2.1/?apikey=122acd72-fa55-4d0b-b97d-d17f3817735b&lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=122acd72-fa55-4d0b-b97d-d17f3817735b&lang=ru_RU"></script>
 </body>
 
 </html>

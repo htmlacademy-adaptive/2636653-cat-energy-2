@@ -13,8 +13,8 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body page__body--bg">
-  <header class="header header__index" data-test="header">
+<body class="body body--bg">
+  <header class="header header-index" data-test="header">
     <div class="container">
       <nav class="navigation navigation--open navigation--nojs">
         <div class="navigation__logo">
@@ -22,11 +22,11 @@
             <picture>
               <source media="(min-width:1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-pic-desktop.svg">
               <source media="(min-width:768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-pic-tablet.svg">
-              <img class="navigation_logo-image" src="images/logo-pic-mobile.svg" alt="Логотип" width="33" height="38">
+              <img class="navigation__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип" width="33" height="38">
             </picture>
             <picture>
               <source media="(min-width:1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
-              <img class="navigation_logo-text" src="images/logo-text.svg" alt="Логотип" width="101" height="18">
+              <img class="navigation__logo-text" src="images/logo-text.svg" alt="Логотип" width="101" height="18">
             </picture>
           </a>
           <button class="navigation__toggle" type="button">
@@ -113,7 +113,7 @@
         <div class="experience-container">
           <h2 class="experience__title title">Живой пример</h2>
           <p class="experience__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="experience-wrapper">
+          <div class="experience__wrapper">
             <ul class="experience__list">
               <li class="experience__item">
                 <p class="experience__statistics">5 кг</p>
@@ -131,7 +131,6 @@
           </div>
         </div>
         <div class="experience__demo demo">
-          
           <div class="demo__image demo__image--before">
             <picture>
               <source media="(min-width:768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
@@ -182,6 +181,7 @@
   </main>
 
   <footer class="footer" data-test="footer">
+    <div class="container footer__wrapper">
     <a class="footer__logo logo" href="#">
       <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Логотип">
     </a>
@@ -196,11 +196,11 @@
         <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Мы в Телеграме</span></a>
       </li>
     </ul>
-    <div class="copyright-wrapper copyright">
+    <div class="copyright copyright-wrapper">
       <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
-
+</div>
   </footer>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=<КЛЮЧ>&lang=ru_RU"></script>
 </body>

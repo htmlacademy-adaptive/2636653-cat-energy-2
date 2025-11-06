@@ -6,28 +6,28 @@
   font-weight: 400;
 }
 
-.title--line {
-  width: fit-content;
-  position: relative;
+// .title--line {
+//   width: fit-content;
+//   position: relative;
 
-  &::before {
-    content: "";
-    right: calc(100% + 40px);
-    width: 100vw;
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    background: $green;
-    z-index: 1;
-  }
+//   &::before {
+//     content: "";
+//     right: calc(100% + 40px);
+//     width: 100vw;
+//     position: absolute;
+//     top: 50%;
+//     height: 2px;
+//     background: $green;
+//     z-index: 1;
+//   }
 
-  &::after {
-    content: "";
-    width: 100vw;
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    background: $green;
-    left: calc(100% + 40px);
-  }
-}
+//   &::after {
+//     content: "";
+//     width: 100vw;
+//     position: absolute;
+//     top: 50%;
+//     height: 2px;
+//     background: $green;
+//     left: calc(100% + 40px);
+//   }
+// }

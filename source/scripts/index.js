@@ -1,4 +1,3 @@
-
 const toggle = document.querySelector('.navigation__toggle');
 const nav = document.querySelector('.navigation');
 
