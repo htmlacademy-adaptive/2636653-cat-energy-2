@@ -9,6 +9,33 @@
   line-height: 1;
   margin-bottom: 36px;
   position: relative;
+  margin-top: 23px;
+
+  &--line {
+    width: fit-content;
+    position: relative;
+
+    &::before {
+      content: "";
+      right: calc(100% + 40px);
+      width: 100vw;
+      position: absolute;
+      top: 50%;
+      height: 2px;
+      background: $green;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      width: 100vw;
+      position: absolute;
+      top: 50%;
+      height: 2px;
+      background: $green;
+      left: calc(100% + 40px);
+    }
+  }
 }
 
 .additional-products__container {

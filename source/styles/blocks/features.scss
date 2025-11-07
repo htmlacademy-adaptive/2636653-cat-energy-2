@@ -1,12 +1,22 @@
 .features {
   color: $text-dark;
-  padding-bottom: 49px;
+  padding-bottom: 30px;
 }
 
 .features__title {
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  display: flex;
+  gap: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,10 +27,31 @@
   .features {
     padding-bottom: 36px;
   }
+
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 37px;
+    flex-wrap: wrap;
+    max-width: 633px;
+  }
+
+  .features__item {
+    min-width: 246px;
+    height: 280px;
+    flex-direction: column;
+    padding-top: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .features {
     padding-left: 0;
+  }
+
+  .features__list {
+    min-width: 1220px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }

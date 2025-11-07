@@ -180,6 +180,10 @@
     background-image: url("../../icons/stack.svg#burger");
     background-size: 24px 24px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -193,6 +197,10 @@
     background-size: 18px 18px;
     background-repeat: no-repeat;
     margin-left: 5px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -204,6 +212,19 @@
 
 @media (min-width: $desktop-width) {
   .navigation__item-link--color {
-    color: $text-dark;
+    color: #111111;
   }
 }
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation:not(.navigation--nojs) .navigation__toggle {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+

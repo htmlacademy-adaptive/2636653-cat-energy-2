@@ -49,7 +49,7 @@
     text-align: left;
     position: relative;
     background: none;
-    padding-left: 120px;
+    padding-left: 160px;
     height: 810px;
   }
 
@@ -82,7 +82,7 @@
   .hero img {
     position: absolute;
     top: 202px;
-    right: 27px;
+    right: 80px;
   }
 
   .hero__wrapper {
@@ -95,7 +95,7 @@
 @media (min-width: $desktop-width) {
   .hero {
     position: relative;
-    padding-left: 190px;
+    padding-left: 270px;
     height: 578px;
   }
 

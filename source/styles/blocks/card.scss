@@ -7,7 +7,9 @@
   text-transform: uppercase;
   grid-column: 1/1;
   margin: 0;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  display: block;
 }
 
 .card__property {
@@ -43,8 +45,9 @@
   }
 }
 
-.card picture {
-  display: grid;
+.card__link {
+  padding-bottom: 10px;
+  margin: auto;
 }
 
 .card__list {
@@ -58,7 +61,6 @@
   grid-column: 1/1;
   grid-row: 1/1;
   align-self: center;
-  justify-self: center;
 }
 
 .card__container {
@@ -73,71 +75,28 @@
   justify-content: space-between;
 }
 
-.card--empty {
-  position: relative;
-  padding-top: 25px;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 25px;
-
-
-  &::after {
-    content: "";
-    background-color: #d9d9d9;
-    width: 100vw;
-    height: 1px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &::before {
-    content: " ";
-    background-image: url("../../icons/plus.svg");
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 23px;
-
-
-    @media (min-width: $tablet-width) {
-      margin-top: 50px;
-      width: 60px;
-      height: 60px;
-    }
-  }
-}
-
-.card__title--different,
-.card__property--different {
-  display: block;
-  text-align: center;
-}
-
-
-.card__property--different {
-  padding-bottom: 15px;
-}
-
 
 @media (min-width: $tablet-width) {
   .card {
     display: flex;
     flex-direction: column;
     height: 511px;
-    padding: 19px 37px 20px;
+    padding: 10px 37px 20px;
     background: linear-gradient(to bottom, $text-light 81px, $bg-secondary 0);
   }
 
   .card picture {
     width: 200px;
     height: 210px;
+    margin: 0 auto;
+  }
+
+  .card picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card__link {
     margin: 0 auto;
   }
 
@@ -156,22 +115,9 @@
     padding-bottom: 20px;
   }
 
-  .card__title--different {
-    margin-top: 37px;
-    margin-bottom: 0;
-  }
-
 
   .card__property {
     font-size: 16px;
-  }
-
-  .card__property--different {
-    width: 170px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 66px;
   }
 
   .card__item {
@@ -189,58 +135,27 @@
       display: block;
     }
   }
-
-  .card--empty {
-    height: 429px;
-    border: 1px solid #d9d9d9;
-    margin-top: 81px;
-    padding: 0;
-    padding-left: 37px;
-    padding-right: 37px;
-  }
-
-  .card--empty .button--different {
-    margin: 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .card {
-    padding-left: 21px;
+    padding: 0;
+  }
+
+  .card__list {
+    padding: 25px 38px 15px 25px;
   }
 
   .card__title {
     width: 140px;
     padding: 0;
-    padding-left: 10px;
-    padding-bottom: 25px;
   }
 
   .card__property {
     padding-left: 18px;
   }
 
-  .catalog__button {
-    margin-top: 18px;
-    margin-left: 18px;
-    width: 169px;
-  }
-
-  .catalog__list {
-    row-gap: 63px;
-  }
-
-  .card__title--different {
-    width: 134px;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 26px;
-  }
-
-  .card__property--different {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 90px;
+  .card__link {
+    padding-bottom: 20px;
   }
 }

@@ -1,8 +1,30 @@
+// .button-link {
+//   font-family: $secondary-font;
+//   font-size: 16px;
+//   line-height: 1.2;
+//   color: $text-light;
+//   background-color: $green;
+//   text-decoration: none;
+// }
+
+
 .button-link {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   font-size: 16px;
   line-height: 1.2;
+  border: none;
   color: $text-light;
   background-color: $green;
+  text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+
+  &--different {
+    color: $text-dark;
+    background-color: $bg-primary;
+  }
+
+  &:hover {
+    background-color: $green-dark;
+  }
 }
