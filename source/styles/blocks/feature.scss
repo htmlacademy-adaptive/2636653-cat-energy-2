@@ -44,9 +44,7 @@
   }
 
   &--time {
-    padding: 0;
-
-    &::before {
+       &::before {
       content: "";
       background-image: url("../../icons/stack.svg#icon-time");
     }

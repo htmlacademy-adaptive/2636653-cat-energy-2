@@ -12,5 +12,8 @@
   &--different {
     color: $text-dark;
     background-color: $bg-primary;
-  }
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    }
 }

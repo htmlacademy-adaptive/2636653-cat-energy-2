@@ -7,4 +7,22 @@
     z-index: 10;
     background-color: $text-light;
   }
+
+  .header--nojs {
+    position: static;
+  }
+
+  .header-catalog {
+    position: static;
+  }
+
+  .header--nojs.hero__wrapper {
+    margin-top: 0;
+  }
+
+  .header-index.header--nojs {
+    ~.main-container .hero__wrapper {
+      margin-top: 0;
+    }
+  }
 }

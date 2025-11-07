@@ -6,6 +6,20 @@ toggle.addEventListener('click', () => {
   nav.classList.toggle('navigation--close');
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('.header-index, .header-catalog');
+  const navigation = document.querySelector('.navigation');
+
+  if (!header || !navigation) {
+    console.error();
+    return;
+  }
+
+  console.log();
+
+  header.classList.remove('header--nojs');
+  navigation.classList.remove('navigation--nojs');
+});
 
 ymaps.ready(init);
 

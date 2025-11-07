@@ -10,7 +10,7 @@
 .catalog__title {
   margin: 0;
   padding-top: 25px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 }
 
 .catalog__button {
@@ -33,7 +33,7 @@
   .catalog__list {
     flex-direction: row;
     gap: 60px;
-    padding-bottom: 44px;
+    padding-bottom: 48px;
   }
 
   .catalog__item {
@@ -42,6 +42,7 @@
 
   .catalog__button {
     margin-top: 10px;
+    max-width: 250px;
   }
 }
 
@@ -52,6 +53,7 @@
 
   .catalog__list {
     gap: 80px;
+    row-gap: 63px;
   }
 
   .catalog__item {
@@ -59,13 +61,8 @@
   }
 
   .catalog__button {
-    margin-top: 18px;
-    margin-left: 18px;
     width: 169px;
-  }
+    margin: 0 auto;
 
-  .catalog__list {
-    row-gap: 63px;
   }
-
 }
