@@ -14,7 +14,7 @@
     flex-direction: row;
     width: 704px;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     padding-top: 25px;
   }
 
@@ -171,48 +171,36 @@
   }
 }
 
-.navigation--close {
-  .navigation__toggle::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-image: url("../../icons/stack.svg#burger");
-    background-size: 24px 24px;
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      display: none;
+@media (max-width: 767px) {
+  .navigation--close {
+    .navigation__toggle::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url("../../icons/stack.svg#burger");
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
     }
+  }
+
+  .navigation--open {
+    .navigation__toggle::before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-image: url("../../icons/stack.svg#close");
+      background-size: 18px 18px;
+      background-repeat: no-repeat;
+      margin-left: 5px;
+        }
   }
 }
 
-.navigation--open {
-  .navigation__toggle::before {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    background-image: url("../../icons/stack.svg#close");
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: $mobile-width) {
+@media (min-width: $mobile-width) {
   .navigation--close .navigation__list {
     display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .navigation__item-link--color {
-    color: #111111;
   }
 }
 
@@ -228,3 +216,22 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .navigation--close {
+    .navigation__toggle::before {
+      display: none;
+    }
+  }
+
+  .navigation--open {
+    .navigation__toggle::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__item-link--color {
+    color: #111111;
+  }
+}

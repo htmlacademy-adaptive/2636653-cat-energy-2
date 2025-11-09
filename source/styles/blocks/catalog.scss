@@ -27,7 +27,7 @@
   .catalog__title {
     font-size: 60px;
     padding: 0;
-    padding-bottom: 84px;
+    padding-bottom: 80px;
   }
 
   .catalog__list {
@@ -49,6 +49,7 @@
 @media (min-width: $desktop-width) {
   .catalog__title {
     padding-top: 70px;
+    padding-bottom: 85px;
   }
 
   .catalog__list {
