@@ -38,7 +38,7 @@
             <a class="navigation__item-link navigation__item-link--color" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__item-link navigation__item-link--color" href="catalog.html">Каталог продукции</a>
+            <a class="navigation__item-link navigation__item-link--color navigation__item--active" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__item-link navigation__item-link--color" href="programs.html">Подбор программы</a>
@@ -325,7 +325,7 @@
     </section>
 
     <section class="subscription">
-      <div class="container ">
+      <div class="container subscription__container">
         <h2 class="subscription__title subscription__title--line">Акции и новинки</h2>
         <p class="subscription__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscription__form" action="#">
@@ -335,8 +335,8 @@
         </form>
       </div>
     </section>
-    <section class="map">
-      <div class="map__wrapper lead">
+    <section class="map map--color">
+      <div class="map__wrapper lead container">
         <div class="lead__wrapper">
           <h4 class="lead__subtitle">Приглашаем <br> к сотрудничеству <br> дилеров!</h4>
           <p class="lead__address"><span>ул. Большая</span>
@@ -344,8 +344,8 @@
           </p>
         </div>
         <h2 class="visually-hidden">Карта</h2>
-        <div id="map" style="width:100%; height:100%;"></div>
       </div>
+      <div class="map__address" id="map" style="width:100%; height:100%;"></div>
     </section>
   </main>
   <footer class="footer" data-test="footer">

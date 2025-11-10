@@ -105,6 +105,12 @@
   }
 }
 
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .subscription__container {
+    padding: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .subscription {
     padding-left: 0;

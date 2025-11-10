@@ -24,10 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
 ymaps.ready(init);
 
 function init() {
-  const map = new ymaps.Map('map', {
-    center: [59.938719, 30.323037],
-    zoom: 14
-  });
+  const mapContainer = document.getElementById('map');
+
+  function setMapHeight() {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth >= 1440) {
+      mapContainer.style.height = '400px';
+    } else if (screenWidth > 767) {
+      mapContainer.style.height = '400px';
+    } else {
+      mapContainer.style.height = '362px';
+    }
+  }
 
   function getIconSize() {
     const screenWidth = window.innerWidth;
@@ -46,15 +55,27 @@ function init() {
     return [-size[0] / 2, -size[1]];
   }
 
+  setMapHeight();
+
+
+  const map = new ymaps.Map('map', {
+    center: [59.938719, 30.323037],
+    zoom: 14
+  });
+
+
   const myPlacemark = new ymaps.Placemark([59.938719, 30.323037], {
     hintContent: 'Наш офис',
     balloonContent: 'ул. Большая Конюшенная, д. 19/8'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../images/logo-pic-tablet.svg',
+    iconImageHref: '../images/map-pin.png',
     iconImageSize: getIconSize(),
     iconImageOffset: getIconOffset()
   });
 
+
   map.geoObjects.add(myPlacemark);
+
+  window.addEventListener('resize', setMapHeight);
 }
