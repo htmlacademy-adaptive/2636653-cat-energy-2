@@ -237,11 +237,15 @@
     text-decoration-color: $green;
     opacity: 1;
     text-underline-offset: 10px;
-  }
+    }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__item-link--color {
     color: #111111;
+  }
+
+  .navigation__item--active-index {
+    text-decoration-color: $text-light;
   }
 }
