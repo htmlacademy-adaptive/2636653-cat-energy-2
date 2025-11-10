@@ -74,10 +74,6 @@
     margin-bottom: 80px;
   }
 
-  .subscription__container {
-    padding: 0;
-  }
-
   .subscription__title {
     font-size: 32px;
     margin: 0;
@@ -106,6 +102,12 @@
 
   .subscription__button {
     width: 256px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .subscription__container {
+    padding: 0;
   }
 }
 

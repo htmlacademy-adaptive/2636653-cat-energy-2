@@ -54,6 +54,12 @@
   }
 }
 
+@media (max-width: 1439px) {
+  .social {
+    justify-content: center;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .social {
