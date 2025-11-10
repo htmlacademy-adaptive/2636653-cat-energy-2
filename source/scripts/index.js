@@ -55,29 +55,27 @@ function init() {
     return [-size[0] / 2, -size[1]];
   }
 
-  // Устанавливаем высоту перед созданием карты
   setMapHeight();
 
-  // Создаем карту ОДИН раз
+
   const map = new ymaps.Map('map', {
     center: [59.938719, 30.323037],
     zoom: 14
   });
 
-  // Создаем метку
+
   const myPlacemark = new ymaps.Placemark([59.938719, 30.323037], {
     hintContent: 'Наш офис',
     balloonContent: 'ул. Большая Конюшенная, д. 19/8'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../images/logo-pic-tablet.svg',
+    iconImageHref: '../images/map-pin.png',
     iconImageSize: getIconSize(),
     iconImageOffset: getIconOffset()
   });
 
-  // Добавляем метку на карту
+
   map.geoObjects.add(myPlacemark);
 
-  // Обработчик ресайза
   window.addEventListener('resize', setMapHeight);
 }

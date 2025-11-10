@@ -104,7 +104,10 @@
   }
 
   &:active {
-    opacity: 0.3;
+    text-decoration: underline;
+    text-decoration-color: $green;
+    opacity: 1;
+    text-underline-offset: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -194,7 +197,7 @@
       background-size: 18px 18px;
       background-repeat: no-repeat;
       margin-left: 5px;
-        }
+    }
   }
 }
 
