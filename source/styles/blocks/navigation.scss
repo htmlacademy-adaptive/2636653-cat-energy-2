@@ -231,6 +231,13 @@
       display: none;
     }
   }
+
+  .navigation__item--active {
+    text-decoration: underline;
+    text-decoration-color: $green;
+    opacity: 1;
+    text-underline-offset: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
